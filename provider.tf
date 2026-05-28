@@ -9,3 +9,12 @@ terraform{
 provider "azurerm" {
   features { }
 }
+resource "azurerm_resource_group" "rgname" {
+    name = "dev-rg"
+    location = "westus"
+    tags = {
+      env = "test"
+      mangedby = "terraform"
+    }
+  
+}
