@@ -5,6 +5,10 @@ terraform{
             version = "4.78"
         }
     }
+    backend "azurerm" {
+      resource_group_name = "tets"
+      key = "test.tfstate"
+    }
 }
 provider "azurerm" {
   features { }
