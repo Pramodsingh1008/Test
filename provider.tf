@@ -16,5 +16,6 @@ resource "azurerm_resource_group" "rgname" {
       env = "test"
       mangedby = "terraform"
     }
+    managed_by = "Terraform2"
   
 }
