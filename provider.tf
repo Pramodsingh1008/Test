@@ -7,8 +7,7 @@ terraform{
     }
     backend "azurerm" {
       resource_group_name = "tets"
-      storage_account_name = "te"
-          key = "test.tfstate"
+              key = "test.tfstate"
     }
 }
 provider "azurerm" {
